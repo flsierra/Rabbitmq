@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Back4RedSocialAmistad-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Back4RedSocialComentarios-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Back4RedSocialJPA-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Back4RedSocialMensajes-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Back4RedSocialPublicaciones-main/src/main/java" charset="UTF-8" />
+  </component>
+</project>
