@@ -33,6 +33,10 @@ public class Usuario {
         this.edad = edad;
     }
 
+   public Usuario(Long id){
+        this.id = id;
+   }
+
     public Long getId() {
         return id;
     }
@@ -52,17 +56,19 @@ public class Usuario {
     public Integer getEdad() {
         return edad;
     }
+    @OneToMany(mappedBy = "solicitante")
+    List<Amistad>solicitudesEnviadas;
+    @OneToMany(mappedBy = "solicitado")
+    List<Amistad>solicitudesRecibidas;
 
-    @OneToMany(mappedBy = "usuario")
-    List<Publicacion> publicaciones;
-
-    @OneToMany(mappedBy = "emisor")
-    List<Mensaje> mensajesEnviados;
-
-    @OneToMany(mappedBy = "receptor")
-    List<Mensaje> mensajesRecibidos;
-
-    @OneToMany(mappedBy = "usuario")
-    List<Comentario> comentarios;
-
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
 }

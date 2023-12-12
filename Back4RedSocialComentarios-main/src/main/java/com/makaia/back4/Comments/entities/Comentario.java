@@ -59,4 +59,14 @@ public class Comentario {
     public void setPublicacion(Publicacion publicacion) {
         this.publicacion = publicacion;
     }
+
+    @Override
+    public String toString() {
+        return "Comentario{" +
+                "id=" + id +
+                ", contenido='" + contenido + '\'' +
+                ", usuario=" + usuario +
+                ", publicacion=" + publicacion +
+                '}';
+    }
 }

@@ -1,5 +1,6 @@
 package com.makaia.back4.Users.repositories;
 
+
 import com.makaia.back4.Comments.entities.Usuario;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

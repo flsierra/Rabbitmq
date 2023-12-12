@@ -1,4 +1,4 @@
-package com.makaia.back4.JpaMySql;
+package com.makaia.back4.Messages;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

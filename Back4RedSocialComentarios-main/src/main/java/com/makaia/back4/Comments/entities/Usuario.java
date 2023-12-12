@@ -53,6 +53,7 @@ public class Usuario {
         return edad;
     }
 
+
     @OneToMany(mappedBy = "usuario")
     List<Publicacion> publicaciones;
 
@@ -64,5 +65,6 @@ public class Usuario {
 
     @OneToMany(mappedBy = "usuario")
     List<Comentario> comentarios;
+
 
 }

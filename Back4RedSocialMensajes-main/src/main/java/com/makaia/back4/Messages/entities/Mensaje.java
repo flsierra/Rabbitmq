@@ -1,11 +1,10 @@
-package com.makaia.back4.Amistad.entities;
+package com.makaia.back4.Messages.entities;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table
-public class Comentario {
-
+public class Mensaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
@@ -14,8 +13,8 @@ public class Comentario {
     private String contenido;
 
     @ManyToOne(optional = false)
-    Usuario usuario;
+    Usuario emisor;
 
     @ManyToOne(optional = false)
-    Publicacion publicacion;
+    Usuario receptor;
 }

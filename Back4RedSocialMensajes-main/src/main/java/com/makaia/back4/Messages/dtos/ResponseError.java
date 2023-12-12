@@ -1,4 +1,4 @@
-package com.makaia.back4.JpaMySql.dtos;
+package com.makaia.back4.Messages.dtos;
 
 public class ResponseError {
     private String message;

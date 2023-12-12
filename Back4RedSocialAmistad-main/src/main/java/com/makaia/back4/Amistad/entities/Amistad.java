@@ -12,7 +12,7 @@ public class Amistad {
     protected Long id;
 
     @Column
-    private boolean isAceptado;
+    private boolean isAceptado=false;
 
     @Column(nullable = true)
     private Date desde;
@@ -22,4 +22,52 @@ public class Amistad {
 
     @ManyToOne(optional = false)
     Usuario solicitado;
+
+    public Amistad() {
+    }
+
+    public Amistad(boolean isAceptado, Date desde, Usuario usuario) {
+        this.isAceptado = isAceptado;
+        this.desde = desde;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public boolean isAceptado() {
+        return isAceptado;
+    }
+
+    public void setAceptado(boolean aceptado) {
+        isAceptado = aceptado;
+    }
+
+    public Date getDesde() {
+        return desde;
+    }
+
+    public void setDesde(Date desde) {
+        this.desde = desde;
+    }
+
+    public Usuario getSolicitante() {
+        return solicitante;
+    }
+
+    public void setSolicitante(Usuario solicitante) {
+        this.solicitante = solicitante;
+    }
+
+    public Usuario getSolicitado() {
+        return solicitado;
+    }
+
+    public void setSolicitado(Usuario solicitado) {
+        this.solicitado = solicitado;
+    }
 }

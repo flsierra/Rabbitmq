@@ -1,4 +1,4 @@
-package com.makaia.back4.JpaMySql.exceptions;
+package com.makaia.back4.Messages.exceptions;
 
 import org.springframework.http.HttpStatusCode;
 

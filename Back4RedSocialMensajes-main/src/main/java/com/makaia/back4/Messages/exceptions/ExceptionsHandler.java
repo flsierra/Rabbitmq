@@ -1,6 +1,6 @@
-package com.makaia.back4.JpaMySql.exceptions;
+package com.makaia.back4.Messages.exceptions;
 
-import com.makaia.back4.JpaMySql.dtos.ResponseError;
+import com.makaia.back4.Messages.dtos.ResponseError;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

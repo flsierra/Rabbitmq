@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/usuario")
+@RequestMapping("api/v1/users")
 public class UsuarioController {
-    private UsuarioService service;
+    private  UsuarioService service;
 
     @Autowired
     public UsuarioController(UsuarioService service) {
@@ -23,8 +23,9 @@ public class UsuarioController {
         return this.service.crear(dto);
     }
 
-    @GetMapping("/list")
+    @GetMapping
     public List<Usuario> listarUsuarios(){
+        System.out.println("Started");
         return  this.service.listar();
     }
     @DeleteMapping("usuario/{userID}")

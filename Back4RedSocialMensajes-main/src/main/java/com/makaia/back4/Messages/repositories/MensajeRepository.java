@@ -1,6 +1,6 @@
-package com.makaia.back4.Amistad.repositories;
+package com.makaia.back4.Messages.repositories;
 
-import com.makaia.back4.Amistad.entities.Mensaje;
+import com.makaia.back4.Messages.entities.Mensaje;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

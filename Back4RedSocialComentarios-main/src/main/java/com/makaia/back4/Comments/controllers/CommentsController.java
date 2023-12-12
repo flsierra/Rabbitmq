@@ -10,12 +10,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/comments")
-public class Controller {
+public class CommentsController {
     private CommentService service;
 
 
     @Autowired
-    public Controller(CommentService service) {
+    public CommentsController(CommentService service) {
         this.service = service;
     }
 

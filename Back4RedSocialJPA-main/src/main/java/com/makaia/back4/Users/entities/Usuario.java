@@ -1,5 +1,6 @@
 package com.makaia.back4.Users.entities;
 
+
 import com.makaia.back4.Comments.entities.Amistad;
 import com.makaia.back4.Comments.entities.Comentario;
 import com.makaia.back4.Comments.entities.Mensaje;
@@ -67,14 +68,6 @@ public class Usuario {
 
     public List<com.makaia.back4.Comments.entities.Mensaje> getMensajesRecibidos() {
         return mensajesRecibidos;
-    }
-
-    public List<com.makaia.back4.Comments.entities.Amistad> getSolicitudasEnviadas() {
-        return solicitudasEnviadas;
-    }
-
-    public List<com.makaia.back4.Comments.entities.Amistad> getSolicitudasRecibidas() {
-        return solicitudasRecibidas;
     }
 
     public List<com.makaia.back4.Comments.entities.Comentario> getComentarios() {

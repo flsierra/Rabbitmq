@@ -1,5 +1,6 @@
 package com.makaia.back4.Users.entities;
 
+
 import com.makaia.back4.Comments.entities.Usuario;
 import jakarta.persistence.*;
 

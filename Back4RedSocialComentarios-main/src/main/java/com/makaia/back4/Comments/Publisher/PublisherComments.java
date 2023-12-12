@@ -1,7 +1,5 @@
 package com.makaia.back4.Comments.Publisher;
 
-import com.makaia.back4.Comments.entities.Comentario;
-import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
-package com.makaia.back4.JpaMySql.repositories;
+package com.makaia.back4.Messages.repositories;
 
-import com.makaia.back4.JpaMySql.entities.Usuario;
+import com.makaia.back4.Messages.entities.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

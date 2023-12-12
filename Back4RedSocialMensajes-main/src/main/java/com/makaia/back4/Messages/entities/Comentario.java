@@ -1,10 +1,11 @@
-package com.makaia.back4.JpaMySql.entities;
+package com.makaia.back4.Messages.entities;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table
-public class Mensaje {
+public class Comentario {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
@@ -13,8 +14,8 @@ public class Mensaje {
     private String contenido;
 
     @ManyToOne(optional = false)
-    Usuario emisor;
+    Usuario usuario;
 
     @ManyToOne(optional = false)
-    Usuario receptor;
+    Publicacion publicacion;
 }

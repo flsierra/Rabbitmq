@@ -1,4 +1,4 @@
-package com.makaia.back4.Amistad.entities;
+package com.makaia.back4.Messages.entities;
 
 import jakarta.persistence.*;
 
